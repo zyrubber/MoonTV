@@ -102,13 +102,13 @@
 4. 设置环境变量 NEXT_PUBLIC_STORAGE_TYPE，值为 **upstash**；设置 USERNAME 和 PASSWORD 作为站长账号
 5. 重试部署
 
-### Cloudflare 部署（**不支持，详情请看置顶 issue**）
+### Cloudflare 部署
 
 **Cloudflare Pages 的环境变量尽量设置为密钥而非文本**
 
 #### 普通部署（localstorage）
 
-1. **Fork** 本仓库到你的 GitHub 账户。~~
+1. **Fork** 本仓库到你的 GitHub 账户。
 2. 登陆 [Cloudflare](https://cloudflare.com)，点击 **计算（Workers）-> Workers 和 Pages**，点击创建
 3. 选择 Pages，导入现有的 Git 存储库，选择 Fork 后的仓库
 4. 构建命令填写 **pnpm install --frozen-lockfile && pnpm run pages:build**，预设框架为无，**构建输出目录**为 `.vercel/output/static`
